@@ -1,2 +1,3 @@
 # Hakaton_september_2026
-presentations and files
+DATA SWAGA team
+presentation code and calculations
