@@ -1,0 +1,79 @@
+{
+  "clients": 14437,
+  "regions": 16,
+  "fine_rows": 27182,
+  "input_hashes": {
+    "fuel_transaction_clean.csv": "b465d264885c973ffa4fea539646bbb6b0e5c9e4d56655717e89ff4383f75cf3",
+    "fines_2026_clean.csv": "ba12d377bca86cf77dd6db16610e2f547b93b6a0937e4d9725abe9b03ad8c579",
+    "clients_demographics_clean.csv": "5a9005b7417c7a7f991a8d1131c8769a4606f0956e0f83044804cddc54b4930f"
+  },
+  "reproduced_main_beta": -2.0479716449097225,
+  "main_wild_p": 0.0064,
+  "dose_wild_p": 0.022,
+  "dose_wild_B": 4999,
+  "bootstrap_B": 1000,
+  "permutation_B": 19999,
+  "refinery_regions": 11,
+  "no_refinery_regions": 5,
+  "same_region_fines_pct": 66.89470628329084,
+  "source_summary": {
+    "clean_rows": {
+      "clients": 15328,
+      "fuel": 207899,
+      "fines": 44679
+    },
+    "clients": 14437,
+    "vehicles": 15299,
+    "pairs": 15322,
+    "duplicate_pairs": 6,
+    "shared_documents": 22,
+    "groups": {
+      "old": 7097,
+      "middle": 4100,
+      "new": 3240
+    },
+    "fine_model_n": 27182,
+    "fine_model_clients": 6056,
+    "panel_n": 20674,
+    "regions": 16,
+    "wild_p": 0.0064,
+    "wild_B": 4999,
+    "pretrend_p": 0.7295578313027411,
+    "main": {
+      "model": "Основная: регион × период + регион × группа",
+      "term": "post_new",
+      "beta": -2.0479716449097225,
+      "se": 0.42772312312708194,
+      "ci_low": -2.959641901324156,
+      "ci_high": -1.1363013884952893,
+      "p_value": 0.00023942190084523573,
+      "n": 27182,
+      "unit": "п.п.",
+      "cluster": "region"
+    },
+    "poisson": {
+      "model": "Poisson: опасные штрафы на клиента",
+      "term": "post_new",
+      "beta": -0.20049291638495312,
+      "se": 0.09560076098802918,
+      "ci_low": -0.40426111494801337,
+      "ci_high": 0.0032752821781071306,
+      "p_value": 0.05333648914927289,
+      "n": 20674,
+      "unit": "log(IRR)",
+      "cluster": "region",
+      "irr": 0.8183272867206829,
+      "irr_low": 0.6674698121672588,
+      "irr_high": 1.0032806517754953
+    },
+    "hashes": {
+      "fuel_transaction_clean.csv": "b465d264885c973ffa4fea539646bbb6b0e5c9e4d56655717e89ff4383f75cf3",
+      "fines_2026_clean.csv": "ba12d377bca86cf77dd6db16610e2f547b93b6a0937e4d9725abe9b03ad8c579",
+      "clients_demographics_clean.csv": "5a9005b7417c7a7f991a8d1131c8769a4606f0956e0f83044804cddc54b4930f"
+    },
+    "unknown_prices": 213,
+    "regex_false_positives": 13,
+    "matrix_rank": 58,
+    "matrix_columns": 58
+  }
+}
